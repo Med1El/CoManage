@@ -16,7 +16,7 @@ public interface ProduitRepository extends JpaRepository<Produit, Long> {
     List<Produit> findByDisponible(boolean disponible);
 
     // Optionnel : recherche des produits par catégorie
-    // List<Produit> findByCategorieId(Long categorieId);
+    List<Produit> findByCategorieId(Long categorieId);
 }
 
 
